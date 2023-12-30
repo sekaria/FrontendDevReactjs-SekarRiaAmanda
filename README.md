@@ -1,5 +1,5 @@
 # ReactJS Project
-URL WEB: [[https://github.com/sekaria/FrontendDevReactjs-SekarRiaAmanda](https://frontenddevreactjs-sekarriaamanda.netlify.app/)](https://frontenddevreactjs-sekarriaamanda.netlify.app/)
+URL WEB: https://frontenddevreactjs-sekarriaamanda.netlify.app/
 
 
 This project is built with ReactJS and includes various dependencies. Below are the details of ReactJS, its dependencies, and the Node.js version used in this project.
