@@ -1,0 +1,314 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #11235a;
+	--secondary-color: #596fb7;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 20px;
+}
+
+/* HOME HEADER */
+.homeHeader-container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.homeHeader-title {
+	color: #595959;
+}
+
+hr {
+	opacity: 20%;
+}
+
+.homeHeader-description {
+	max-width: 600px;
+	font-size: 100%;
+	color: grey;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* BUTTON OPEN */
+.open {
+	color: green;
+	font-size: 10px;
+}
+
+.close {
+	color: red;
+	font-size: 10px;
+}
+
+/* LOADING */
+.loading {
+	border: 8px solid #f3f3f3;
+	border-top: 8px solid var(--primary-color);
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.loading-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+}
+
+/* FILTER */
+.filter-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.filter-title {
+	color: grey;
+	font-size: 100%;
+}
+
+.filter-options {
+	display: flex;
+	align-items: center;
+}
+
+.filter-elements {
+	display: flex;
+	gap: 10px;
+}
+
+.filter-title,
+.filter-element {
+	margin-right: 10px;
+}
+
+.filter-element {
+	display: flex;
+	align-items: center;
+	color: var(--primary-color);
+}
+
+.clear-button button {
+	background-color: white;
+	color: #888;
+	padding: 8px 16px;
+	border: 1px solid #888;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background-color 0.3s;
+}
+
+.clear-button button:hover {
+	background-color: var(--secondary-color);
+	color: white;
+	border-color: white;
+}
+
+@media screen and (max-width: 768px) {
+	.filter-container,
+	.filter-options,
+	.filter-elements,
+	.filter-title {
+		width: 100%;
+		flex-direction: column;
+		gap: 5px;
+	}
+}
+
+/* CARD */
+.restaurant-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 16px;
+	margin: 16px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.restaurant-card img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.restaurant-card h3 {
+	margin-top: 8px;
+}
+
+.restaurnat-rating {
+	color: #11235a;
+}
+
+.open-status {
+	margin-top: 8px;
+	gap: 2px;
+	display: flex;
+	justify-content: flex-end;
+	margin-left: auto;
+}
+
+.category-price {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 8px;
+}
+
+.category-price p {
+	margin: 0;
+}
+
+.restaurant-category {
+	display: flex;
+	font-size: 10px;
+	color: #888;
+}
+
+.learn-button button {
+	background-color: var(--primary-color);
+	color: white;
+	width: 100%;
+	padding: 8px 0;
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+	margin-top: 8px;
+}
+
+.restaurant-card h3 {
+	font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+	.restaurant-card {
+		width: calc(25% - 32px);
+		margin: 16px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.restaurant-card {
+		width: calc(100% - 32px);
+		margin: 16px;
+	}
+}
+
+/* CARD LIST */
+.restaurant-cards-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.restaurant-lists p {
+	color: #888;
+	font-size: 100%;
+}
+
+/* DETAIL PAGE */
+.detail-page {
+	padding: 16px;
+}
+
+.detail-back {
+	margin-bottom: 16px;
+	font-size: 20px;
+}
+
+.detail-container {
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+	}
+}
+
+.image-container {
+	width: 100%;
+	order: 1;
+	max-width: 300px;
+
+	@media screen and (min-width: 768px) {
+		width: 40%;
+	}
+}
+
+.image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.info-container {
+	width: 100%;
+	order: 2;
+
+	@media screen and (min-width: 768px) {
+		width: 60%;
+		margin-left: 16px;
+	}
+}
+
+.rating-container {
+	margin-top: 8px;
+	color: #11235a;
+}
+
+.open-status {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 8px;
+}
+
+.description-container {
+	margin-top: 16px;
+}
+
+/* LOAD MORE */
+.load-button {
+	display: flex;
+	justify-content: center;
+	margin-top: 16px;
+}
+.load-button button {
+	background-color: white;
+	color: var(--primary-color);
+	padding: 8px 16px;
+	border: 1px solid var(--primary-color);
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background-color 0.3s;
+}
+
+.load-button button:hover {
+	background-color: var(--secondary-color);
+	color: white;
+	border-color: white;
+}
