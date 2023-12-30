@@ -29,6 +29,10 @@ git clone https://github.com/sekaria/FrontendDevReactjs-SekarRiaAmanda.git
 ```bash
 cd FrontendDevReactjs-SekarRiaAmanda
 ```
+3. Install dependencies:
+```bash
+npm install
+```
 4. Start the project:
 ```bash
 npm start
