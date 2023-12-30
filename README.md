@@ -22,23 +22,12 @@ Node.js version: v18.17.1
 ## How to Start the Project
 
 1. Clone the repository:
-
 ```bash
 git clone https://github.com/sekaria/FrontendDevReactjs-SekarRiaAmanda.git
 ```
 2. Navigate to the project directory:
 ```bash
 cd FrontendDevReactjs-SekarRiaAmanda
-```
-3. Install dependencies:
-```bash
-npm install
-npm install react@18.2.0 react-dom@18.2.0
-npm install react-router-dom@6.21.1
-npm install react-select@5.8.0
-npm install react-icons@4.12.0
-npm install axios@0.24.0
-
 ```
 4. Start the project:
 ```bash
